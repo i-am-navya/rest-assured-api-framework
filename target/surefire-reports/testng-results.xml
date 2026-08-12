@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-08-13T00:42:01 IST" name="REST Assured API Test Suite" finished-at="2026-08-13T00:42:08 IST" duration-ms="6232">
+    <groups>
+    </groups>
+    <test started-at="2026-08-13T00:42:01 IST" name="GET Posts Tests" finished-at="2026-08-13T00:42:05 IST" duration-ms="3445">
+      <class name="tests.GetPostsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.GetPostsTest@5d0bf09b]" started-at="2026-08-13T00:42:02 IST" name="setup" finished-at="2026-08-13T00:42:02 IST" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getAllPosts_shouldHaveCorrectContentTypeHeader()[pri:0, instance:tests.GetPostsTest@5d0bf09b]" started-at="2026-08-13T00:42:02 IST" name="getAllPosts_shouldHaveCorrectContentTypeHeader" finished-at="2026-08-13T00:42:03 IST" duration-ms="1096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllPosts_shouldHaveCorrectContentTypeHeader -->
+        <test-method signature="getAllPosts_shouldRespondWithin2Seconds()[pri:0, instance:tests.GetPostsTest@5d0bf09b]" started-at="2026-08-13T00:42:03 IST" name="getAllPosts_shouldRespondWithin2Seconds" finished-at="2026-08-13T00:42:03 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllPosts_shouldRespondWithin2Seconds -->
+        <test-method signature="getAllPosts_shouldReturn200AndHundredPosts()[pri:0, instance:tests.GetPostsTest@5d0bf09b]" started-at="2026-08-13T00:42:03 IST" name="getAllPosts_shouldReturn200AndHundredPosts" finished-at="2026-08-13T00:42:04 IST" duration-ms="980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllPosts_shouldReturn200AndHundredPosts -->
+        <test-method signature="getPostById_shouldReturnCorrectPost()[pri:0, instance:tests.GetPostsTest@5d0bf09b]" started-at="2026-08-13T00:42:04 IST" name="getPostById_shouldReturnCorrectPost" finished-at="2026-08-13T00:42:04 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPostById_shouldReturnCorrectPost -->
+        <test-method signature="getPostById_withInvalidId_shouldReturn404()[pri:0, instance:tests.GetPostsTest@5d0bf09b]" started-at="2026-08-13T00:42:04 IST" name="getPostById_withInvalidId_shouldReturn404" finished-at="2026-08-13T00:42:05 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPostById_withInvalidId_shouldReturn404 -->
+        <test-method signature="getPostsByUserId_shouldReturnFilteredPosts()[pri:0, instance:tests.GetPostsTest@5d0bf09b]" started-at="2026-08-13T00:42:05 IST" name="getPostsByUserId_shouldReturnFilteredPosts" finished-at="2026-08-13T00:42:05 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPostsByUserId_shouldReturnFilteredPosts -->
+      </class> <!-- tests.GetPostsTest -->
+    </test> <!-- GET Posts Tests -->
+    <test started-at="2026-08-13T00:42:05 IST" name="Create Post Tests" finished-at="2026-08-13T00:42:07 IST" duration-ms="1620">
+      <class name="tests.CreatePostTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreatePostTest@7d9d0818]" started-at="2026-08-13T00:42:05 IST" name="setup" finished-at="2026-08-13T00:42:05 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createPost_shouldRespondWithin3Seconds()[pri:0, instance:tests.CreatePostTest@7d9d0818]" started-at="2026-08-13T00:42:05 IST" name="createPost_shouldRespondWithin3Seconds" finished-at="2026-08-13T00:42:05 IST" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost_shouldRespondWithin3Seconds -->
+        <test-method signature="createPost_shouldReturn201AndCreatedPost()[pri:0, instance:tests.CreatePostTest@7d9d0818]" started-at="2026-08-13T00:42:05 IST" name="createPost_shouldReturn201AndCreatedPost" finished-at="2026-08-13T00:42:06 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost_shouldReturn201AndCreatedPost -->
+        <test-method signature="createPost_shouldReturnNewPostId()[pri:0, instance:tests.CreatePostTest@7d9d0818]" started-at="2026-08-13T00:42:06 IST" name="createPost_shouldReturnNewPostId" finished-at="2026-08-13T00:42:06 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost_shouldReturnNewPostId -->
+        <test-method signature="createPost_withMissingTitle_shouldStillReturn201()[pri:0, instance:tests.CreatePostTest@7d9d0818]" started-at="2026-08-13T00:42:06 IST" name="createPost_withMissingTitle_shouldStillReturn201" finished-at="2026-08-13T00:42:07 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost_withMissingTitle_shouldStillReturn201 -->
+      </class> <!-- tests.CreatePostTest -->
+    </test> <!-- Create Post Tests -->
+    <test started-at="2026-08-13T00:42:07 IST" name="Users Tests" finished-at="2026-08-13T00:42:08 IST" duration-ms="1085">
+      <class name="tests.UsersTest">
+        <test-method signature="getAllUsers_shouldHaveValidEmailFormat()[pri:0, instance:tests.UsersTest@70ed52de]" started-at="2026-08-13T00:42:07 IST" name="getAllUsers_shouldHaveValidEmailFormat" finished-at="2026-08-13T00:42:07 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers_shouldHaveValidEmailFormat -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UsersTest@70ed52de]" started-at="2026-08-13T00:42:07 IST" name="setup" finished-at="2026-08-13T00:42:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getAllUsers_shouldReturn200AndTenUsers()[pri:0, instance:tests.UsersTest@70ed52de]" started-at="2026-08-13T00:42:07 IST" name="getAllUsers_shouldReturn200AndTenUsers" finished-at="2026-08-13T00:42:07 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers_shouldReturn200AndTenUsers -->
+        <test-method signature="getPostsByUser_shouldReturnUserPosts()[pri:0, instance:tests.UsersTest@70ed52de]" started-at="2026-08-13T00:42:07 IST" name="getPostsByUser_shouldReturnUserPosts" finished-at="2026-08-13T00:42:07 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPostsByUser_shouldReturnUserPosts -->
+        <test-method signature="getUserById_shouldHaveAddressWithCity()[pri:0, instance:tests.UsersTest@70ed52de]" started-at="2026-08-13T00:42:07 IST" name="getUserById_shouldHaveAddressWithCity" finished-at="2026-08-13T00:42:07 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserById_shouldHaveAddressWithCity -->
+        <test-method signature="getUserById_shouldReturnCorrectUser()[pri:0, instance:tests.UsersTest@70ed52de]" started-at="2026-08-13T00:42:07 IST" name="getUserById_shouldReturnCorrectUser" finished-at="2026-08-13T00:42:07 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserById_shouldReturnCorrectUser -->
+        <test-method signature="getUserById_withInvalidId_shouldReturn404()[pri:0, instance:tests.UsersTest@70ed52de]" started-at="2026-08-13T00:42:07 IST" name="getUserById_withInvalidId_shouldReturn404" finished-at="2026-08-13T00:42:08 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserById_withInvalidId_shouldReturn404 -->
+      </class> <!-- tests.UsersTest -->
+    </test> <!-- Users Tests -->
+  </suite> <!-- REST Assured API Test Suite -->
+</testng-results>
