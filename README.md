@@ -19,13 +19,14 @@ schema checks, response time assertions, and negative test cases.
 
 ## Test Coverage
 
-### GET Posts (6 tests)
+### GET Posts (7 tests)
 - Get all posts and verify count and structure
 - Get single post by ID
 - Get post with invalid ID - verify 404
 - Verify response time under 2 seconds
 - Filter posts by userId query parameter
 - Verify Content-Type response header
+- Validate response structure against a JSON schema
 
 ### POST - Create Posts (4 tests)
 - Create new post and verify 201 response
@@ -41,7 +42,7 @@ schema checks, response time assertions, and negative test cases.
 - Verify nested address object fields
 - Get posts for a specific user
 
-**Total: 16 tests, 0 failures**
+**Total: 17 tests, 0 failures**
 
 ## Framework Structure
 
@@ -53,6 +54,10 @@ src/test/java/
 │   └── UsersTest.java          - Users endpoint tests
 └── utils/
     └── ApiConfig.java          - Base configuration and reusable specs
+
+src/test/resources/
+└── schemas/
+    └── post-schema.json        - JSON schema for a single post
 ```
 
 ## How to Run

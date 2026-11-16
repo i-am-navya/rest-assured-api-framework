@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import utils.ApiConfig;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.*;
 
 public class GetPostsTest extends ApiConfig {
@@ -86,5 +87,17 @@ public class GetPostsTest extends ApiConfig {
         .then()
             .statusCode(200)
             .header("Content-Type", containsString("application/json"));
+    }
+
+    // Test 7: Validate the response structure against a JSON schema
+    @Test
+    public void getPostById_shouldMatchJsonSchema() {
+        given()
+            .spec(requestSpec)
+        .when()
+            .get("/posts/1")
+        .then()
+            .statusCode(200)
+            .body(matchesJsonSchemaInClasspath("schemas/post-schema.json"));
     }
 }
