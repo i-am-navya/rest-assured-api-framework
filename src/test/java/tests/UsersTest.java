@@ -48,9 +48,7 @@ public class UsersTest extends ApiConfig {
             .get("/users")
         .then()
             .statusCode(200)
-            .body("[0].email", containsString("@"))
-            .body("[1].email", containsString("@"))
-            .body("[2].email", containsString("@"));
+                .body("email", everyItem(containsString("@")));
     }
 
     // Test 4: Get user with invalid ID

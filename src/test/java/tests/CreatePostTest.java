@@ -1,6 +1,7 @@
 package tests;
 
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.ApiConfig;
 import java.util.HashMap;
@@ -87,6 +88,6 @@ public class CreatePostTest extends ApiConfig {
 
         int newPostId = response.jsonPath().getInt("id");
         System.out.println("New post created with ID: " + newPostId);
-        assert newPostId > 0 : "Post ID should be greater than 0";
+        Assert.assertTrue(newPostId > 0, "Post ID should be greater than 0");
     }
 }
